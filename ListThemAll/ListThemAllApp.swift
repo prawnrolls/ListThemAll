@@ -15,7 +15,7 @@ struct ListThemAllApp: App {
                 Tab { //create one tab button that links to the specified page
                     PlaceIveBeenView()
                 } label: {
-                    Image(systemName: "custom.globe.asia")
+                    Image(systemName: "globe")
                     Text("My travel")
                 }
                 Tab {

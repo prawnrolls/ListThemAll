@@ -64,6 +64,7 @@ struct StudentList: View {
                     } label: {
                         Image(systemName: "person.circle.fill")
                             .foregroundStyle(.orange)
+                            .font(.system(size: 35))
                     }.padding(.horizontal, 20)
                 }
             }
