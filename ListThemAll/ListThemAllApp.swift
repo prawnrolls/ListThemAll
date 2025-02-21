@@ -11,7 +11,7 @@ import SwiftUI
 struct ListThemAllApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlaceIveBeenView()
         }
     }
 }
