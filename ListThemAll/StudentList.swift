@@ -47,7 +47,7 @@ struct StudentList: View {
                     Image(systemName: "swift")
                         .foregroundStyle(.orange)
                     NavigationLink(student) {
-                        VStack(alignment: .leading) {
+                        VStack(alignment: .leading) { //contents of child view
                             Text(student)
                                 .font(.headline)
                         }
@@ -57,6 +57,16 @@ struct StudentList: View {
             }
             .navigationBarTitle("Student List")
             .font(.title)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Image(systemName: "person.circle.fill")
+                            .foregroundStyle(.orange)
+                    }
+                }
+            }
         }
     }
 }

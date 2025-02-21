@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct StudentDetailView: View {
+    let student: String //accepts a student name that was selected from your list
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Spacer()
+            Text("Student Name:")
+                .font(.headline)
+            Text(student)
+                .font(.largeTitle)
+                .bold()
+                .foregroundStyle(.blue)
+            Spacer()
+        }
+        .padding()
     }
-}
-
+    }
 #Preview {
-    StudentDetailView()
+    StudentDetailView(student: "Linda")
 }
