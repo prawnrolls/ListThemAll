@@ -64,7 +64,7 @@ struct StudentList: View {
                     } label: {
                         Image(systemName: "person.circle.fill")
                             .foregroundStyle(.orange)
-                    }
+                    }.padding(.horizontal, 20)
                 }
             }
         }
